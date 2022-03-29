@@ -1,0 +1,13 @@
+<p>dashboard works!</p>
+
+<div *ngIf="selected==1" >
+<app-shopify
+[settings]="accountId"
+(customizationValueChange)="productGroupSelected($event)"
+>
+</app-shopify>
+</div>
+
+<div *ngIf="selected==2">
+    <app-facebook></app-facebook>
+</div>
